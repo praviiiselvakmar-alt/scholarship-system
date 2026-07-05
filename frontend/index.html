@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Scholarship Finder</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:'Segoe UI',sans-serif;
+        }
+
+        body{
+            background:linear-gradient(135deg,#FBE4D8,#DFB6B2);
+            color:#190019;
+            min-height:100vh;
+            display:flex;
+            flex-direction:column;
+        }
+
+        header{
+            background:#FFFFFF;
+            padding:18px 8%;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            box-shadow:0 5px 20px rgba(25,0,25,0.08);
+            position:sticky;
+            top:0;
+            z-index:100;
+        }
+
+        .logo{
+            font-size:24px;
+            font-weight:700;
+            color:#522B5B;
+        }
+
+        .nav-buttons{
+            display:flex;
+            gap:15px;
+        }
+
+        .btn{
+            text-decoration:none;
+            padding:10px 22px;
+            border-radius:8px;
+            font-weight:600;
+            transition:.3s;
+        }
+
+        .btn-login{
+            color:#522B5B;
+            border:2px solid #522B5B;
+        }
+
+        .btn-login:hover{
+            background:#DFB6B2;
+        }
+
+        .btn-register{
+            background:#522B5B;
+            color:white;
+        }
+
+        .btn-register:hover{
+            background:#2B124C;
+        }
+
+        .hero-container{
+            flex:1;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            padding:50px 20px;
+        }
+
+        .hero{
+            background:white;
+            max-width:760px;
+            width:100%;
+            padding:55px 45px;
+            border-radius:18px;
+            text-align:center;
+            box-shadow:0 15px 35px rgba(25,0,25,.1);
+            border:1px solid #DFB6B2;
+        }
+
+        .badge{
+            display:inline-block;
+            background:#FBE4D8;
+            color:#2B124C;
+            padding:8px 18px;
+            border-radius:30px;
+            font-size:14px;
+            font-weight:600;
+            margin-bottom:20px;
+        }
+
+        .hero h1{
+            font-size:42px;
+            color:#190019;
+            margin-bottom:20px;
+            line-height:1.3;
+        }
+
+        .hero p{
+            font-size:17px;
+            color:#522B5B;
+            line-height:1.8;
+            margin-bottom:35px;
+        }
+
+        .cta-btn{
+            text-decoration:none;
+            color:white;
+            padding:15px 40px;
+            border-radius:10px;
+            font-weight:700;
+            background:linear-gradient(135deg,#522B5B,#2B124C);
+            display:inline-block;
+            transition:.3s;
+            box-shadow:0 10px 25px rgba(82,43,91,.35);
+        }
+
+        .cta-btn:hover{
+            transform:translateY(-3px);
+            box-shadow:0 15px 30px rgba(82,43,91,.45);
+        }
+
+        .features{
+            display:flex;
+            justify-content:center;
+            gap:25px;
+            flex-wrap:wrap;
+            margin:0 auto 60px;
+            padding:0 20px;
+        }
+
+        .feature{
+            background:white;
+            width:240px;
+            padding:30px;
+            border-radius:15px;
+            text-align:center;
+            box-shadow:0 10px 20px rgba(25,0,25,.08);
+            transition:.3s;
+        }
+
+        .feature:hover{
+            transform:translateY(-8px);
+        }
+
+        .feature h3{
+            color:#522B5B;
+            margin-bottom:12px;
+        }
+
+        .feature p{
+            color:#854F6C;
+            line-height:1.6;
+        }
+
+        footer{
+            background:white;
+            padding:20px;
+            text-align:center;
+            color:#854F6C;
+            border-top:1px solid #DFB6B2;
+        }
+
+        @media(max-width:768px){
+
+            header{
+                flex-direction:column;
+                gap:15px;
+            }
+
+            .hero{
+                padding:35px 25px;
+            }
+
+            .hero h1{
+                font-size:30px;
+            }
+
+            .features{
+                flex-direction:column;
+                align-items:center;
+            }
+
+            .feature{
+                width:100%;
+                max-width:320px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">🎓 AI Scholarship Finder</div>
+
+    <div class="nav-buttons">
+        <a href="login.html" class="btn btn-login">Login</a>
+        <a href="register.html" class="btn btn-register">Register</a>
+    </div>
+
+</header>
+
+<div class="hero-container">
+
+    <main class="hero">
+
+        <div class="badge">
+            🤖 AI Powered Scholarship Matching
+        </div>
+
+        <h1>Discover the Right Scholarships for Your Academic Journey</h1>
+
+        <p>
+            Find scholarships that perfectly match your academic profile,
+            family income, community, achievements and career goals.
+            Our AI helps students discover the best opportunities in seconds.
+        </p>
+
+        <a href="register.html" class="cta-btn">
+            Get Started
+        </a>
+
+    </main>
+
+</div>
+
+<section class="features">
+
+    <div class="feature">
+        <h3>🎯 Smart Matching</h3>
+        <p>AI recommends scholarships based on your profile and eligibility.</p>
+    </div>
+
+    <div class="feature">
+        <h3>⚡ Instant Results</h3>
+        <p>Search hundreds of scholarships within seconds.</p>
+    </div>
+
+    <div class="feature">
+        <h3>📄 Easy Applications</h3>
+        <p>View eligibility, benefits, deadlines and apply quickly.</p>
+    </div>
+
+</section>
+
+<footer>
+    © 2026 AI Scholarship Finder | Built with ❤️ for Students
+</footer>
+
+</body>
+</html>
